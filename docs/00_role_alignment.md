@@ -1,5 +1,7 @@
 # Role Alignment Matrix: Tesla Service Analytics
 
+This mapping follows the flow: Tesla requirement, then Data Analytics, then SQL + Python + Power BI, then Project evidence. The source posting is captured verbatim in docs/tesla_job_description.md (Sr. Incident Investigation Engineer, Automotive Log Data Analyst, Req. ID 272642, Fremont CA), which centers on compiling multi-source vehicle telemetry, managing databases and data streams, discerning incident patterns, and communicating results through visualizations and summary reports. Those four themes map directly onto the SQL, Python, and Power BI evidence below.
+
 | Tesla Job Requirement | Core Competency | Tech Stack & Methodology | Project Evidence Location |
 | :--- | :--- | :--- | :--- |
 | **Field Failure & Service Analytics** | Vehicle failure rate tracking, telemetry data extraction, and warranty triage. | SQL (window functions, aggregations, CTEs, star-schema modeling) | `sql/01_service_failure_queries.sql`<br>`data/` |
