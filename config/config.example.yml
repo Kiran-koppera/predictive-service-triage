@@ -1,0 +1,20 @@
+# Copy to config.local.yml (gitignored) and fill in real values.
+
+database:
+  dialect: postgresql
+    host: localhost
+      port: 5432
+        name: predictive_service_triage
+          user: analyst
+            # password: set via environment variable, never commit it
+
+            paths:
+              raw_dir: data/raw
+                processed_dir: data/processed
+                  reports_dir: reports
+
+                  model:
+                    high_cost_threshold_usd: 1000
+                      test_size: 0.2
+                        random_state: 42
+                        
